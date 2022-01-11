@@ -1,0 +1,29 @@
+.search-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  label {
+    font-weight: 500;
+  }
+  input {
+    border: 1px solid;
+    padding: 0.5em 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-wrapper {
+    grid-auto-flow: row;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-wrapper {
+    justify-content: stretch;
+    input {
+      width: 100%;
+    }
+  }
+}

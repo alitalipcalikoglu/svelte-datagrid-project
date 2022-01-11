@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"],
+      "_lib/*": ["src/_lib/*"],
+      "stores/*": ["src/stores/*"],
+      "_configs/*": ["src/_configs/*"]
+    }
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte", "src/**/*.scss"],
+  "exclude": ["node_modules", "__sapper__", "static"]
+}

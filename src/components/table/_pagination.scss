@@ -1,0 +1,34 @@
+.tools {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  gap: 1em;
+  font-weight: 500;
+  user-select: none;
+  .show-per-page,
+  .pagination {
+    width: max-content;
+    label {
+      select {
+        cursor: pointer;
+        font-weight: 500;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.bottom {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 1em 0.5em 0;
+    margin-top: 1em;
+    border-top: 1px solid;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .tools {
+    grid-auto-flow: row;
+    justify-content: start;
+  }
+}
